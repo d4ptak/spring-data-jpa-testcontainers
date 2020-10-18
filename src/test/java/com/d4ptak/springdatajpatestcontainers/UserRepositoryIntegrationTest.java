@@ -14,8 +14,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @Testcontainers(disabledWithoutDocker = true)
 @SpringBootTest
-@ContextConfiguration(initializers = { AbstractContainerBaseTest.Initializer.class })
-public class UserRepositoryIntegrationTest extends AbstractContainerBaseTest {
+@ContextConfiguration(initializers = { AbstractIntegrationTest.Initializer.class })
+public class UserRepositoryIntegrationTest extends AbstractIntegrationTest {
 
     @Autowired
     private UserJpaRepository userJpaRepository;

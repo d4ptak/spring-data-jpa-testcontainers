@@ -5,7 +5,7 @@ import org.springframework.context.ApplicationContextInitializer;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.testcontainers.containers.PostgreSQLContainer;
 
-public abstract class AbstractContainerBaseTest {
+public abstract class AbstractIntegrationTest {
 
     private static final String IMAGE_VERSION = "postgres:11.9";
 
